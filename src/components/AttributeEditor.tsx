@@ -1,7 +1,7 @@
-// src/AttributeEditor.tsx
+// src/components/AttributeEditor.tsx
 import React, { useState, useEffect } from 'react';
 import { Key, Copy, Trash2, Save } from 'lucide-react';
-import { Attribute } from './types';
+import { Attribute } from '../types/entity';
 
 interface AttributeEditorProps {
   attributes: Attribute[];

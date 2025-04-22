@@ -1,7 +1,7 @@
 // src/components/EntityTree.tsx
 import React, { useState, useEffect } from 'react';
 import { ChevronDown, ChevronRight, Layers, PlusCircle, Copy, Trash2 } from 'lucide-react';
-import { Entity } from '../types';
+import { Entity } from '../types/entity';
 
 interface EntityTreeProps {
   entities: Entity[];

@@ -1,8 +1,8 @@
 // src/components/EntityHierarchyEditor.tsx
 import React, { useState, useCallback, useEffect } from 'react';
 import { Upload, FileDown, PlusCircle } from 'lucide-react';
-import { Alert, AlertTitle, AlertDescription } from '@/components/ui/alert';
-import { parseEntityHierarchy, EntityParseError } from '../utils/json/parser';
+import { Alert, AlertTitle, AlertDescription } from '../ui/alert';
+import { parseEntityHierarchy, EntityParseError } from '../../utils/json/parser';
 import { 
   addEntity, 
   copyEntity, 
@@ -13,13 +13,13 @@ import {
   updateAttribute,
   copyAttribute,
   exportToJSON
-} from '../utils/operations/entityOperations';
-import { Entity, Attribute } from '../types';
+} from '../../utils/operations/entityOperations';
+import { Entity, Attribute } from '../../types/entity';
 import EntityTree from './EntityTree';
 import EntityEditor from './EntityEditor';
 import AttributeEditor from './AttributeEditor';
 import SearchComponent from './SearchComponent';
-import { findMatchingEntities } from '../utils/search';
+import { findMatchingEntities } from '../../utils/search';
 
 interface EntityHierarchyEditorProps {
   initialData?: Entity[];

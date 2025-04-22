@@ -1,5 +1,5 @@
-// src/utils/search.ts
-import { Entity } from '../types';
+// src/utils/search/search.ts
+import { Entity } from '../../types/entity';
 
 export const searchInEntity = (entity: Entity, query: string): boolean => {
   query = query.toLowerCase();
